@@ -3,7 +3,7 @@
   "version": "3.1.2",
   "description": "You can use the BarcodeScanner plugin to scan different types of barcodes (using the device's camera) and get the metadata encoded in them for processing within your application. This drop in replacement fork of the official BarcodeScanner that removes the open and close barcode reader animations providing a faster user experience.",
   "cordova": {
-    "id": "phonegap-plugin-barcodescanner",
+    "id": "phonegap-plugin-barcodescanner-quick",
     "platforms": [
       "ios",
       "android",
