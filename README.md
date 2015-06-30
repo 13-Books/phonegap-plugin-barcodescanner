@@ -1,15 +1,15 @@
 # PhoneGap Plugin BarcodeScanner
 ================================
 
-[![Build Status](https://travis-ci.org/phonegap/phonegap-plugin-barcodescanner.svg)](https://travis-ci.org/phonegap/phonegap-plugin-barcodescanner)
+Quick Cross-platform BarcodeScanner for Cordova / PhoneGap.
 
-Cross-platform BarcodeScanner for Cordova / PhoneGap.
+Fork of the now official [BarcodeScanner](https://github.com/phonegap/phonegap-plugin-barcodescanner) that removes the open and close barcode reader animations providing a faster user experience.
 
 Follows the [Cordova Plugin spec](http://cordova.apache.org/docs/en/5.0.0/plugin_ref_spec.md), so that it works with [Plugman](https://github.com/apache/cordova-plugman).
 
 ## Installation
 
-    
+
 This requires phonegap 5.0+ ( current stable v3.0.0 )
 
     phonegap plugin add phonegap-plugin-barcodescanner
@@ -36,7 +36,7 @@ prebuilt as a jar library. Any updates to the Library Project should be
 committed with an updated jar.
 
 ## Using the plugin ##
-The plugin creates the object `cordova/plugin/BarcodeScanner` with the method `scan(success, fail)`. 
+The plugin creates the object `cordova/plugin/BarcodeScanner` with the method `scan(success, fail)`.
 
 The following barcode types are currently supported:
 ### Android
@@ -114,7 +114,7 @@ A full example could be:
                 "Result: " + result.text + "\n" +
                 "Format: " + result.format + "\n" +
                 "Cancelled: " + result.cancelled);
-      }, 
+      },
       function (error) {
           alert("Scanning failed: " + error);
       }
@@ -123,7 +123,7 @@ A full example could be:
 
 ## Encoding a Barcode ##
 
-The plugin creates the object `cordova.plugins.barcodeScanner` with the method `encode(type, data, success, fail)`. 
+The plugin creates the object `cordova.plugins.barcodeScanner` with the method `encode(type, data, success, fail)`.
 
 Supported encoding types:
 
